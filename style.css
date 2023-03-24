@@ -1,0 +1,451 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: white;
+}
+.sub-title-right {
+  width: 100%;
+  text-align: end;
+}
+.main-page {
+  background-color: white;
+}
+.nav {
+  width: 100%;
+  display: flex;
+  height: 60px;
+  background-color: white;
+  position: fixed;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-menu {
+  display: none;
+}
+#dropmenu {
+  display: none;
+}
+.btn-menu {
+  padding: 5px 20px;
+  border-radius: 15px;
+  border: 1px transparent;
+  background-color: rgb(99, 194, 238);
+}
+.btn-menu:hover {
+  background-color: rgb(206, 216, 221);
+}
+.btn-menu:active {
+  background-color: red;
+}
+.head {
+  padding: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: rgb(16, 164, 201);
+}
+
+ul li {
+  font-weight: 500;
+  float: left;
+  color: rgb(16, 164, 201);
+  list-style: none;
+  padding: 10px;
+}
+li {
+  cursor: pointer;
+}
+.tablinks:hover {
+  color: orange;
+}
+/* .vertical {
+  writing-mode: vertical-lr;
+} */
+.page_body {
+  padding-top: 60px;
+  display: flex;
+  width: 100%;
+  height: auto;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+}
+.col {
+  width: 50%;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.body_part1 {
+  display: flex;
+
+  flex-direction: column;
+}
+.body_part2 img {
+  border: 1px solid transparent;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+.text-head {
+  font-size: 4vw;
+  /* background: -webkit-linear-gradient(red, blue);
+  background-clip: text;
+  color: transparent; */
+  background: linear-gradient(#17bedb, #6d6a6a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.icon_drop {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Lang-icon {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.Lang-icon img {
+  width: 100px;
+  max-width: 30px;
+  margin: 0px 9px 0px 9px;
+}
+.linkedin {
+  width: 100%;
+  display: flex;
+  max-width: 30px;
+  text-align: center;
+}
+.linkedin img {
+  width: 100%;
+}
+/* about form start*/
+.About-container {
+  padding-top: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.About-container .About-main {
+  margin-top: 10px;
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+}
+.About-container .About-main .header-box {
+  padding: 10px 0px;
+}
+.About-container .About-main .About-profile-into {
+  padding-top: 10px;
+  display: flex;
+  gap: 3rem;
+}
+.About-container .About-main .About-profile-into .About-profile-image {
+  width: 40%;
+  display: flex;
+}
+.About-container .About-main .About-profile-into .About-profile-details {
+  width: 60%;
+  display: flex;
+  font-family: Arial, sans-serif;
+  flex-direction: column;
+  gap: 10px;
+  color: rgb(20, 19, 19);
+  font-size: 1.6vmax;
+}
+.About-body .About-skills-education {
+  display: flex;
+}
+.About-body .About-skills-education .list {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0px;
+}
+@media screen and (max-width: 800px) {
+  .list {
+    display: none;
+  }
+  .nav-menu {
+    display: block;
+    padding: 10px;
+  }
+  #dropmenu {
+    display: none;
+    position: fixed;
+    top: 60px;
+    background-color: aliceblue;
+    width: 100%;
+    height: 200px;
+    color: black;
+    padding: 10px;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 10px;
+  }
+  li:hover {
+    background-color: lightgray;
+  }
+  .About-container .About-main .About-profile-into {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .About-container .About-main .About-profile-into .About-profile-image {
+    width: 100%;
+    display: flex;
+  }
+  .About-container .About-main .About-profile-into .About-profile-image {
+    width: 40%;
+    height: auto;
+    display: flex;
+  }
+  .About-container .About-main .About-profile-into .About-profile-details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: black;
+    font-size: 1.7vmax;
+    font-family: sans-serif;
+    padding-bottom: 10px;
+    letter-spacing: 1px;
+    line-height: 1rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .page_body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+  .col {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .body_part1 {
+    height: 300px;
+  }
+  .body_part2 {
+    width: 80%;
+    padding-bottom: 30px;
+  }
+  .text-head {
+    font-size: 7vw;
+    background: linear-gradient(#e61c1c, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+@media screen and (max-width: 450px) {
+  .About-container .About-main .About-profile-into .About-profile-image {
+    width: 80%;
+    height: auto;
+    display: flex;
+  }
+  .body_part1 {
+    height: 200px;
+  }
+  .page_body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+  }
+  .About-container .About-main .header-box {
+    padding: 10px 0px;
+    font-size: 3vw;
+  }
+  .About-container .About-main .About-profile-into .About-profile-image {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .About-container .About-main .About-profile-into .About-profile-details {
+    width: 100%;
+    display: flex;
+    font-size: 3.3vw;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 10px;
+    line-height: 1.5;
+    letter-spacing: 1.2px;
+  }
+}
+.tabcontent {
+  display: none;
+}
+
+/* about form end*/
+/* project css start*/
+.Project-container {
+  display: flex;
+  width: 100%;
+  padding: 100px 0px 60px 0px;
+  justify-content: center;
+  color: rgb(13, 130, 226);
+  background: white;
+}
+.Project-container .Project-main {
+  margin-top: 10px;
+  display: flex;
+  width: 80%;
+  color: black;
+  justify-content: center;
+  flex-direction: column;
+}
+.Project-container .Project-header {
+  width: 100%;
+}
+.Project-container .Project-header .Project-head-text {
+  background-color: orange;
+  border-radius: 0 10px 10px 0;
+  width: 45%;
+  max-width: 250px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+}
+.Project-list-lang {
+  display: flex;
+  flex-direction: row;
+}
+.Project-list-lang li {
+  background-color: cadetblue;
+}
+.Project-container .Project-list-names {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+.Project-container .Project-list-names .Project-list-names-text {
+  background-color: orange;
+  border-radius: 10px 0px 0px 10px;
+  width: 45%;
+  max-width: 250px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+}
+.Project-container .Project-list {
+  display: flex;
+  align-items: center;
+}
+
+.Projects-name li {
+  padding: 6px;
+}
+.Project-list-subhead {
+  text-align: justify;
+}
+
+/* project css end*/
+/* project2 csss part6 start here*/
+.Project-container-box {
+  width: 80%;
+}
+.Project-container-box .Project-container-main-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.subhead {
+  color: white;
+}
+.First-project-box {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+.First-project-box .project-img {
+  width: 60%;
+}
+.First-project-box .project-img img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+.Project-details {
+  width: 40%;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.Project-details .discription-head {
+  color: black;
+}
+.discription {
+  color: rgb(124, 121, 121);
+}
+.about-lang-and-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ul-list {
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 850px) {
+  .First-project-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .First-project-box .project-img {
+    width: 100%;
+    text-align: center;
+  }
+  .First-project-box .project-img img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+  .Project-details {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 350px) {
+  .ul-list {
+    font-size: 3vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
+/* project2 csss part6 end here*/
