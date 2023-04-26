@@ -304,7 +304,7 @@ li {
   width: 100%;
   padding: 100px 0px 60px 0px;
   justify-content: center;
-  color: rgb(13, 130, 226);
+  color: rgb(47, 49, 47);
   background: white;
 }
 .Project-container .Project-main {
@@ -374,7 +374,9 @@ li {
   gap: 30px;
 }
 .subhead {
-  color: white;
+  padding: 10px 0px;
+  color: rgb(92, 168, 219);
+  display: none;
 }
 .First-project-box {
   width: 100%;
