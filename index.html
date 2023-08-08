@@ -431,19 +431,25 @@
      document.getElementById('hide').style.display = 'none'
     document.getElementById(pageLinks).style.display='block';
     event.currentTarget.className +=" active"
+    closeDropdown()
     
 
   }
  function dropDown(){
     let button =  document.getElementById('dropmenu').style.display 
-     if ( button == "none"){
+     if ( button == "none"){ 
        document.getElementById('dropmenu').style.display = 'block'
      }else{
         document.getElementById('dropmenu').style.display = 'none'
      }
  }
  
-
+function closeDropdown(){
+  let button =  document.getElementById('dropmenu').style.display 
+  if(button == "block"){
+    document.getElementById('dropmenu').style.display = 'none'
+  }
+}
 
         </script>
     </body>
